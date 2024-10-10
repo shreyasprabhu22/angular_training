@@ -1,0 +1,83 @@
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    padding: 30px;
+    font: Serif;
+}
+
+.gallery {
+    padding: 10px;
+    background-color: #E9F1FA;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gallery-item {
+    width: 30%;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: visible;
+    box-shadow: 0 0 5px rgb(10, 10, 10);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+}
+
+.caption {
+    padding: 10px;
+    font-size: 14px;
+    color: #333;
+    background-color: #f9f9f9; 
+    border-top: 1px solid #ddd; 
+}
+
+@media (max-width: 800px) {
+    .gallery-item {
+        width: 45%; 
+    }
+}
+
+@media (max-width: 500px) {
+    .gallery-item {
+        width: 100%; 
+    }
+}
+
+img.complete-sepia {
+    filter: sepia(100%);
+}
+img.partial-sepia {
+    filter: sepia(30%);
+}
+img.extra-blur {
+    filter: blur(5px); 
+}
+
+.opacity-low {
+    opacity: 0.3; 
+}
+
+.opacity-medium {
+    opacity: 0.6; 
+}
+
+.opacity-high {
+    opacity: 0.9; 
+}
+
+img.shadow {
+    filter: drop-shadow(4px 4px 4px rgb(11, 11, 14));
+}
+img.shadow-large {
+    filter: drop-shadow(4px 4px 10px rgb(11, 11, 14));
+}
+img.block-shadow {
+    box-shadow: 5px 5px 10px rgb(60, 59, 116), 10px 10px 20px rgb(3, 3, 3); 
+        
+}
+
+
