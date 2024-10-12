@@ -11,6 +11,7 @@ function validateForm() {
             hasErrors=true
             alert("Name cannot be less than 3 characters and should only contains letters")
             document.getElementById("name").style.boxShadow= "0 0 5px red"
+            document.getElementById("name").select()
             return
         }
 
@@ -24,6 +25,7 @@ function validateForm() {
             hasErrors=true
             alert("It is not a valid email")
             document.getElementById("email").style.boxShadow= "0 0 5px red"
+            document.getElementById("email").select()
             return
             
         }
@@ -36,10 +38,39 @@ function validateForm() {
             hasErrors=true
             alert("password should be more than 8 charecters ")
             document.getElementById("pwd").style.boxShadow= "0 0 5px red"
+            document.getElementById("pwd").select()
         } 
     }
  
-    
+    var checkbox_choices = 0;
+    for (counter = 0;  counter < frm1.checkbox.length; counter++)
+    {
+        if (frm1.checkbox[counter].checked)
+        { 
+            checkbox_choices = checkbox_choices + 1; }
+            
+
+    }
+
+
+    if (checkbox_choices >  2 )
+    {
+        msg="You're limited to only two selections.\n"
+        msg=msg + "You have made " + checkbox_choices + " selections.\n"
+        msg=msg + "Please remove " + (checkbox_choices-2)  + " selection(s)."
+        alert(msg)
+        hasErrors=true;
+        
+    }
+
+
+    if (checkbox_choices < 2 )
+    {
+
+        alert("Please make two selections. \n" + checkbox_choices + " entered so far.")
+        hasErrors=true
+    }
+
  
     if (!hasErrors) {
         document.getElementById("myForm").reset(); 
@@ -57,4 +88,13 @@ function handleBlur(element) {
     element.style.border = ""; 
     element.style.boxShadow = ""; 
     element.style.outline = ""; 
+}
+
+
+function scaleButton(element){
+    element.style.transform="scale(1.1) "
+}
+
+function resetScale(element){
+    element.style.transform="scale(1)"
 }

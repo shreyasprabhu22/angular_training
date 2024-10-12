@@ -7,3 +7,9 @@ function navigateToCourse() {
         }
     }
 }
+
+
+function go_to_course(){
+    var url = document.pre_requisites.selectname.options[document.pre_requisites.selectname.selectedIndex].value
+    window.location.href = url        
+}

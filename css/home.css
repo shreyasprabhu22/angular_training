@@ -1,8 +1,8 @@
-/* Importing Google Font */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
-    font-family: 'Roboto', Arial, sans-serif; /* Use Roboto */
+    font-family: 'Roboto', Arial, sans-serif; 
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -19,7 +19,7 @@ body {
 h4 {
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    font-weight: 700; /* Bold for headings */
+    font-weight: 700;
 }
 
 .aboutus, .ourcourses {
@@ -57,6 +57,7 @@ ul {
 }
 
 .sec div {
+    height: 350px;
     break-inside: avoid;
     margin-bottom: 20px;
     background: white;
@@ -67,7 +68,7 @@ ul {
 
 .sec h5 {
     margin-bottom: 10px;
-    font-weight: 700; /* Bold for section headings */
+    font-weight: 700; 
 }
 
 .courses {
@@ -99,7 +100,7 @@ ul {
     }
 
     .aboutus, .ourcourses {
-        width: 100%;
+        width: 400px;
     }
 
     .sec {
@@ -129,9 +130,6 @@ ul {
         font-size: 1.5em; 
     }
 
-    .aboutus, .ourcourses {
-        margin: 10px 0; 
-    }
 }
 
 @keyframes moveit-tiny {

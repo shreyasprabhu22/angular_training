@@ -1,5 +1,5 @@
 body {
-    background-color:#E9F1FA;
+    background-color: #E9F1FA;
     font-family: 'Open Sans', Arial, sans-serif;
 }
 
@@ -9,25 +9,25 @@ header {
     text-align: center;
     font-size: 2em;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    background: linear-gradient(to right,#00ABE4, rgb(26, 27, 29));
+    background: linear-gradient(to right, #00ABE4, rgb(26, 27, 29));
 }
 
-h4, header{
+h4, header {
     font-weight: bold;
 }
+
 nav {
-    animation:myfirst 5s;
-    -webkit-animation:myfirst 5s;
+    animation: myfirst 5s;
     background-color: #333;
     color: white;
     padding: 10px;
     text-align: center;
     font: Serif;
 }
-@keyframes myfirst
-{
-from {background:#00ABE4}
-to {background:#333}
+
+@keyframes myfirst {
+    from { background: #00ABE4; }
+    to { background: #333; }
 }
 
 nav a {
@@ -41,13 +41,11 @@ nav a:hover {
     text-decoration: underline;
 }
 
-
-
 #dropdownMenuButton {
     background: transparent;
     border: none;
     font-weight: bold;
-    color:white;
+    color: white;
 }
 
 .dropdown-item:hover .nested-dropdown {
@@ -66,23 +64,25 @@ nav a:hover {
 footer {
     background-color: #2c3e50;
     color: white;
-    padding-left: 70px ;
+    padding-left: 70px;
     padding-right: 90px;
     display: flex;
     justify-content: space-between; 
     align-items: center;
-    
 }
-ul{
+
+ul {
     list-style-type: none;
 }
+
 .footerdiv {
     text-align: left;
 }
 
-img{
+img {
     padding: 10px;
 }
+
 .icon {
     margin: 10px 0;
 }
@@ -106,39 +106,89 @@ img{
     text-decoration: none;
 }
 
-.menudropdown{
+.menudropdown {
     text-align: left;
- }
-
-
-@media (max-width: 750px) {
-   footer{
-    padding-top: 10px;
-    display: flex;
-    flex-direction: column;
-   }
 }
 
+@media (max-width: 750px) {
+    footer {
+        padding: 10px; 
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+    }
+    .anchortags {
+        text-align: left;
+        padding: 0;
+        margin: 0;
+    }
+}
 
- @media (max-width: 750px) {
-    nav{
+@media (max-width: 750px) {
+    nav {
         display: flex;
         flex-direction: column;
     }
-    
- }
-
-.products{
-    text-align:left;
 }
- 
-.mail{
+
+.products {
+    text-align: left;
+}
+
+.mail {
     padding: 0px;
 }
 
-input{
-   margin-bottom: 10px;
+input {
+    margin-bottom: 10px;
 }
-.dropdown{
+
+.dropdown {
     display: inline-block;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: auto;
+    max-width: 90%;
+    padding: 50px;
+    background-color: #E1F5FE;
+    box-shadow: 0 0 5px black;
+}
+
+.modal-content {
+    padding: 20px;
+}
+
+@media (max-width: 500px) {
+    .modal {
+        width: 90%;
+        height: auto;
+    }
+}
+
+#scholarship-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#scholarship-form input {
+    box-shadow: 0 0 5px black;
+    border: none;
+    width: 300px;
+}
+
+#scholarship-form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
 }

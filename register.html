@@ -17,7 +17,7 @@
         <div class="formclass">
             <h5 style="font-weight: bold;">Registration Form</h5>
             <p>Select your course and fill the registration form for further steps.</p>
-            <form onsubmit="validateForm()" name="frm1" id="myForm">
+            <form onsubmit="validateForm()" name="frm1" id="myForm" >
                 <table>
                     <tr>
                         <td>Name</td>
@@ -53,14 +53,14 @@
                     <tr>
                         <td>Software Knowledge</td>
                         <td>
-                            <label for="p">Python</label> <input type="checkbox" id="p" value="Python"> 
-                            <label for="a">Angular</label> <input type="checkbox" id="a" value="Angular"> 
-                            <label for="j">Java</label> <input type="checkbox" id="j" value="Java">
+                            <label for="p">Python</label> <input type="checkbox" name="checkbox" id="p" value="Python"> 
+                            <label for="a">Angular</label> <input type="checkbox" name="checkbox" id="a" value="Angular"> 
+                            <label for="j">Java</label> <input type="checkbox" name="checkbox" id="j" value="Java">
                         </td> 
                     </tr>
                     <tr>
                         <td><label for="comments">Comments:</label></td>
-                        <td><textarea id="comments" cols="20" rows="4"></textarea></td>
+                        <td><textarea id="comments" cols="20" rows="4" ></textarea></td>
                     </tr>
                 </table>
                 <div>

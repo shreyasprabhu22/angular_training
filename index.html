@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/header_footer.js"></script>
+    <script src="js/index.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Live Virtual Class</title>
@@ -19,6 +20,9 @@
             <p>
                 Welcome to our innovative Live Virtual Classroom project, where education transcends boundaries! Our platform connects students and teachers from around the globe, fostering a dynamic and interactive learning environment. Through cutting-edge technology and engaging content, we strive to make high-quality education accessible to everyone, anywhere, and anytime. Join us in revolutionizing the way we learn and teach!
             </p>
+            <br><br>
+            <p style="color: blue; text-decoration: underline;" onclick="scholarship()"> Check if you are eligible for our scholarship</p>
+            <a style="color: blue; text-decoration: underline;" href="feedback.html"> Click here to give your feedback</a>
         </div>
         <div class="ourcourses">
             <div class="course">
@@ -66,7 +70,20 @@
                
             </div>
       </section>    
-    
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <p>Enter your marks to see the scholarship eligibility</p>
+          <form id="scholarship-form">
+            <label>Enter your marks percentage </label>
+            <input type="number" id="marks" required >
+            <label>Scholarship status </label>
+            <input type="text" id="res" readonly >
+            <button style="width: 80px;" onclick="calc()">Submit</button>
+          </form>
+        </div>
+      
+      </div>
     <div id="footer"></div>
 </body>
 </html>
