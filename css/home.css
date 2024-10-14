@@ -108,7 +108,7 @@ ul {
 
     .aboutus, .ourcourses {
         width: 95%;
-        margin:0;
+        margin:10px;
     }
 
     .sec {
@@ -117,6 +117,7 @@ ul {
     }
 
     .course-article {
+        width:600px;
         animation: moveit-tiny 8s linear infinite;
     }
 
@@ -132,9 +133,9 @@ ul {
 
 @keyframes moveit-tiny {
     0% {
-        transform: translateX(-30%); 
+        transform: translateX(-100%); 
     }
     100% {
-        transform: translateX(30%); 
+        transform: translateX(100%); 
     }
 }
