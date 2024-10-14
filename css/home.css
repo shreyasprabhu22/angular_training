@@ -9,6 +9,13 @@ body {
     background-color: #f4f4f4;
 }
 
+.links{
+    color:blue;
+    text-decoration: none;
+}
+.links:hover{
+    text-decoration: underline;
+}
 .about {
     display: flex;
     flex-direction: row;
@@ -100,7 +107,8 @@ ul {
     }
 
     .aboutus, .ourcourses {
-        width: 400px;
+        width: 95%;
+        margin:0;
     }
 
     .sec {
@@ -121,16 +129,6 @@ ul {
     }
 }
 
-@media (max-width: 480px) {
-    .sec {
-        column-count: 1; 
-    }
-
-    h2 {
-        font-size: 1.5em; 
-    }
-
-}
 
 @keyframes moveit-tiny {
     0% {
