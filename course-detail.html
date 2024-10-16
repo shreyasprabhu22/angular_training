@@ -114,13 +114,14 @@
                     <div class=contain>
                         <div>
                     <p>${course.paragraph}</p>
-                    <ul>
-                        <li>IN THIS COURSE YOU WILL :</li>
+                    <li>IN THIS COURSE YOU WILL :</li>
+                    <ul class="detail">
+                       
                         ${course.description.map(point => `<li>${point}</li>`).join('')}
                     </ul>
                     </div>
                     <div class="image">
-                    <img src="${course.image}" alt="${course.title}" class="img-fluid my-3">
+                    <img  src="${course.image}" alt="${course.title}" class="img-fluid my-3">
                     </div>
                     </div>
                 `;

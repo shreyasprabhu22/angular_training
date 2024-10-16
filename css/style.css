@@ -73,7 +73,6 @@ footer {
 
 .footerdiv {
     flex: 1 1 300px;
-    text-align: left;
     margin: 10px;
 }
 
@@ -156,8 +155,11 @@ input {
     .footerdiv, .products, .anchortags {
         flex: 1 1 100%;
         margin: 5px 0;
-        text-align: left;
+        text-align: center;
         padding-top: 20px;
+    }
+    .anchortags a {
+        text-align: center;
     }
     img {
         padding-right: 0;

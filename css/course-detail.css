@@ -1,75 +1,94 @@
+body {
+    background-color: #F7F9FC;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 2em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(to right, #00ABE4, rgb(26, 27, 29));
+}
+
+h1 {
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
 .container {
-    max-width: 900px;
-    margin: auto;
-    padding: 30px;
-    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    background: white;
     border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px black;
 }
 
 .contain {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-p {
-    flex: 1 1 300px;
-    padding: 20px;
-    text-align: justify;
-}
-
-h1 {
-    color: #003366;
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.img-fluid {
-    border-radius: 10px;
-    margin-bottom: 20px;
-    max-width: 100%;
-    height: auto;
-}
-
-ul {
-    padding-left: 20px;
-    margin-top: 10px;
-}
-
-li {
-    margin-bottom: 10px;
-    line-height: 1.6;
+    align-items: flex-start;
 }
 
 .image {
-    flex: 1 1 300px;
-    margin: 0 20px;
+    text-align: center;
+    padding-left: 150px;
 }
 
-@media (max-width: 600px) {
-    .container {
-        padding: 20px;
-    }
+.contain > div {
+    flex: 1;
+    margin: 20px;
+}
 
-    h1 {
-        font-size: 2em;
-    }
+.contain p {
+    text-align: justify;
+}
 
+li {
+    list-style-type: none;
+    padding: 0;
+}
+
+.detail li {
+    background: #00ABE4;
+    color: white;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Queries for Responsive Design */
+@media (min-width: 768px) {
     .contain {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    ul li {
+        font-size: 0.9em;
+    }
+
+    .container {
+        padding: 10px;
     }
 
     .image {
-        margin: 0;
+        padding-left: 0;
         text-align: center;
     }
 
-    p {
-        width: auto;
-        padding: 10px;
+    .contain {
+        flex-direction: column-reverse;
+        align-items: center;
     }
 }
