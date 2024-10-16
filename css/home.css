@@ -62,7 +62,7 @@ ul {
 }
 
 .sec div {
-    height: 350px;
+    height: 220px;
     break-inside: avoid;
     margin-bottom: 20px;
     background: white;
@@ -136,4 +136,21 @@ ul {
     100% {
         transform: translateX(100%); 
     }
+}
+.link-container {
+    display: flex;
+    justify-content: center; 
+   
+    
+
+}
+
+.link-container div {
+    margin: 0 15px; 
+    padding: 20px;
+    box-shadow: 0 0 5px black;
+    border-radius:5px
+}
+.hidden {
+    display: none;
 }

@@ -31,16 +31,6 @@ function validateForm() {
         }
     }
  
-    const passwordField = document.getElementById("pwd")
-    if (passwordField) {
-        const passwordLen = passwordField.value.trim();
-        if (passwordLen.length < 8) {
-            hasErrors=true
-            alert("password should be more than 8 charecters ")
-            document.getElementById("pwd").style.boxShadow= "0 0 5px red"
-            document.getElementById("pwd").select()
-        } 
-    }
  
     var checkbox_choices = 0;
     for (counter = 0;  counter < frm1.checkbox.length; counter++)

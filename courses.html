@@ -12,34 +12,18 @@
 <body>
     <div id="header"></div> 
     <div id="courseCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
-        <div class="carousel-inner">
+        <div class="carousel-inner" >
             <div class="carousel-item active">
-                <img src="assets/mern.png" class="d-block w-100" alt="MERN Stack">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5 class="data">MERN Stack</h5>
-                    <p class="data">Delve into the MERN stack, a powerful combination of MongoDB, Express, React, and Node.js for full-stack development.</p>
-                </div>
+                <img src="assets/mern.jpeg" class="d-block w-100" alt="MERN Stack">
             </div>
             <div class="carousel-item">
-                <img src="assets/mean.png" class="d-block w-100" alt="MEAN Stack">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5 class="data">MEAN Stack</h5>
-                    <p class="data">Master the MEAN stack, a popular full-stack framework using MongoDB, Express, Angular, and Node.js.</p>
-                </div>
+                <img src="assets/mean.jpeg" class="d-block w-100" alt="MEAN Stack">
             </div>
             <div class="carousel-item">
-                <img src="assets/gen.png" class="d-block w-100" alt="Generative AI">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5 class="data">Generative AI</h5>
-                    <p class="data">Explore the cutting-edge technology of Generative AI, creating new content based on learned data patterns.</p>
-                </div>
+                <img src="assets/gen.jpeg" class="d-block w-100" alt="Generative AI">
             </div>
             <div class="carousel-item">
-                <img src="assets/dev.png" class="d-block w-100" alt="DevOps Fundamentals">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5 class="data">DevOps Fundamentals</h5>
-                    <p class="data">Understand the DevOps methodology that merges software development and IT operations for enhanced collaboration and efficiency.</p>
-                </div>
+                <img src="assets/dev.jpeg" class="d-block w-100" alt="DevOps Fundamentals">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#courseCarousel" data-bs-slide="prev">
@@ -86,48 +70,62 @@
         <h1 id="all">Available Courses</h1>
 
         <div class="course-container" id="mongodb">
-            <img src="assets/mongodb.jpeg" alt="MongoDB" class="course-image">
-            <h2 class="course-title">MongoDB</h2>
-            <p class="course-description">Explore MongoDB, a leading NoSQL database, renowned for its high performance, scalability, and flexibility. Ideal for managing large sets of data in dynamic applications. Get hands-on experience with data modeling and indexing.
-            </p>
+            <a href="course-detail.html?course=mongodb">
+                <img src="assets/mongodb.jpeg" alt="MongoDB" class="course-image">
+                <h2 class="course-title">MongoDB</h2>
+                <p class="course-description">Unleashing data potential with MongoDB's flexible, scalable database solutions.</p>
+            </a>
         </div>
-
+        
         <div class="course-container" id="express">
-            <img src="assets/express.jpeg" alt="Express.js" class="course-image">
-            <h2 class="course-title">Express.js</h2>
-            <p class="course-description">Master Express, a minimal yet powerful Node.js web application framework. Simplifies development with robust tools for handling HTTP requests and creating RESTful APIs. Build efficient and scalable web applications seamlessly.</p>
+            <a href="course-detail.html?course=express">
+                <img src="assets/express.jpeg" alt="Express.js" class="course-image">
+                <h2 class="course-title">Express.js</h2>
+                <p class="course-description">Simplifying server-side development with Express for fast, scalable applications.</p>
+            </a>
         </div>
-
+        
         <div class="course-container" id="angular">
-            <img src="assets/angular.jpeg" alt="Angular" class="course-image">
-            <h2 class="course-title">Angular</h2>
-            <p class="course-description">Learn Angular, a comprehensive platform and framework for building single-page applications using HTML and TypeScript. Gain expertise in creating dynamic, client-side applications with ease. Understand the MVC architecture and component-driven development.</p>
+            <a href="course-detail.html?course=angular">
+                <img src="assets/angular.jpeg" alt="Angular" class="course-image">
+                <h2 class="course-title">Angular</h2>
+                <p class="course-description">Crafting robust web applications with Angular's powerful framework.</p>
+            </a>
         </div>
-
+        
         <div class="course-container" id="react">
-            <img src="assets/react.jpeg" alt="React" class="course-image">
-            <h2 class="course-title">React</h2>
-            <p class="course-description">Delve into React, a highly efficient JavaScript library for building dynamic user interfaces. Learn to create seamless web applications with a component-based architecture. Discover best practices for state management and rendering performance.</p>
+            <a href="course-detail.html?course=react">
+                <img src="assets/react.jpeg" alt="React" class="course-image">
+                <h2 class="course-title">React</h2>
+                <small class="text-muted">JavaScript library for user interfaces</small>
+                <p class="course-description">Building dynamic user interfaces effortlessly with React's component-based architecture</p>
+            </a>
         </div>
-
+        
         <div class="course-container" id="node">
-            <img src="assets/nodejs.jpeg" alt="Node.js" class="course-image">
-            <h2 class="course-title">Node.js</h2>
-            <p class="course-description">Discover Node.js, an open-source, cross-platform runtime for executing JavaScript outside the browser. Perfect for developing scalable network applications with its event-driven, non-blocking I/O model. Engage in practical sessions to deploy and manage servers.</p>
+            <a href="course-detail.html?course=node">
+                <img src="assets/nodejs.jpeg" alt="Node.js" class="course-image">
+                <h2 class="course-title">Node.js</h2>
+                <p class="course-description">Powering fast and scalable server-side applications with Node.js's event-driven architecture.</p>
+            </a>
         </div>
-
+        
         <div class="course-container" id="devops">
-            <img src="assets/devops.jpeg" alt="DevOps Fundamentals" class="course-image">
-            <h2 class="course-title">DevOps Fundamentals</h2>
-            <p class="course-description">Understand DevOps, a methodology that merges software development and IT operations. Focus on improving collaboration, accelerating development cycles, and enhancing software quality. Learn about continuous integration and continuous deployment pipelines.</p>
+            <a href="course-detail.html?course=devops">
+                <img src="assets/devops.jpeg" alt="DevOps Fundamentals" class="course-image">
+                <h2 class="course-title">DevOps Fundamentals</h2>
+                <p class="course-description">Streamlining collaboration and efficiency through DevOps best practices.</p>
+            </a>
         </div>
-
+        
         <div class="course-container" id="genAI">
-            <img src="assets/genai.jpeg" alt="Generative AI" class="course-image">
-            <h2 class="course-title">Generative AI</h2>
-            <p class="course-description">Get acquainted with Generative AI, a cutting-edge technology that creates new content like text, images, or music based on learned data patterns. Explore its applications in creative industries and data analysis. Experiment with neural networks and machine learning algorithms.</p>
+            <a href="course-detail.html?course=genAI">
+                <img src="assets/genai.jpeg" alt="Generative AI" class="course-image">
+                <h2 class="course-title">Generative AI</h2>
+                <p class="course-description">Transforming creativity and innovation with the power of Generative AI.</p>
+            </a>
         </div>
-    </div>
+     </div>   
     <div id="footer"></div>
 </body>
 </html>

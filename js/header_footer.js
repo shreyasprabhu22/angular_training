@@ -14,7 +14,7 @@ function loadFooter() {
         });
 }
  
-// Load header and footer when the page is loaded
+
 document.addEventListener('DOMContentLoaded', function() {
     loadHeader();
     loadFooter();

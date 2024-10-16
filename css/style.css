@@ -64,23 +64,28 @@ nav a:hover {
 footer {
     background-color: #2c3e50;
     color: white;
-    padding-left: 70px;
-    padding-right: 90px;
+    padding: 20px 30px;
     display: flex;
-    justify-content: space-between; 
-    align-items: center;
-}
-
-ul {
-    list-style-type: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .footerdiv {
+    flex: 1 1 300px;
     text-align: left;
+    margin: 10px;
+}
+
+.products, .anchortags {
+    flex: 1 1 200px;
+    margin: 10px;
 }
 
 img {
     padding: 10px;
+    max-width: 100%;
+    height: auto;
 }
 
 .icon {
@@ -94,45 +99,20 @@ img {
     transition: color 0.3s;
 }
 
-.anchortags {
-    display: flex;
-    flex-direction: column;
-    margin: 10px 0; 
+ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-.anchortags a {
-    text-align: left; 
+.products a, .anchortags a {
+    text-align: left;
     color: white;
     text-decoration: none;
+    transition: color 0.3s;
 }
 
-.menudropdown {
-    text-align: left;
-}
-
-@media (max-width: 750px) {
-    footer {
-        padding: 10px; 
-        flex-direction: column; 
-        align-items: center; 
-        text-align: center; 
-    }
-    .anchortags {
-        text-align: left;
-        padding: 0;
-        margin: 0;
-    }
-}
-
-@media (max-width: 750px) {
-    nav {
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-.products {
-    text-align: left;
+.products a:hover, .anchortags a:hover {
+    color: #ecf0f1;
 }
 
 .mail {
@@ -146,7 +126,6 @@ input {
 .dropdown {
     display: inline-block;
 }
-
 
 #scholarship-form {
     display: flex;
@@ -166,4 +145,29 @@ input {
     border: none;
     border-radius: 5px;
     padding: 12px 20px;
+}
+
+@media (max-width: 750px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footerdiv, .products, .anchortags {
+        flex: 1 1 100%;
+        margin: 5px 0;
+        text-align: left;
+        padding-top: 20px;
+    }
+    img {
+        padding-right: 0;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.anchortags{
+    display: flex;
+    flex-direction: column;
 }

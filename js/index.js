@@ -20,3 +20,14 @@ function calc(event) {
     }
     document.getElementById("res").value = msg;
 }
+
+function toggleMissionContent(button) {
+    const hiddenContent = button.previousElementSibling;
+    hiddenContent.classList.toggle('hidden');
+    
+    if (hiddenContent.classList.contains('hidden')) {
+        button.textContent = "Read More";
+    } else {
+        button.textContent = "Read Less";
+    }
+}
