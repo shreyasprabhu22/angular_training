@@ -147,31 +147,6 @@ input {
     display: inline-block;
 }
 
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 500px;
-    height: auto;
-    max-width: 90%;
-    padding: 50px;
-    background-color: #E1F5FE;
-    box-shadow: 0 0 5px black;
-}
-
-.modal-content {
-    padding: 20px;
-}
-
-@media (max-width: 500px) {
-    .modal {
-        width: 90%;
-        height: auto;
-    }
-}
 
 #scholarship-form {
     display: flex;

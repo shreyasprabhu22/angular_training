@@ -3,6 +3,20 @@ body {
     font-weight: bold;
 }
 
+.carousel {
+    height: 300px; 
+}
+.carousel-item {
+    height: 300px; 
+}
+
+.carousel-item img {
+    height: 300px; 
+}
+.data{
+    color: white;
+    font-weight: bold;
+}
 h1 {
     text-align: center;
     margin-bottom: 20px;

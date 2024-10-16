@@ -21,8 +21,8 @@
                 Welcome to our innovative Live Virtual Classroom project, where education transcends boundaries! Our platform connects students and teachers from around the globe, fostering a dynamic and interactive learning environment. Through cutting-edge technology and engaging content, we strive to make high-quality education accessible to everyone, anywhere, and anytime. Join us in revolutionizing the way we learn and teach!
             </p>
             <br><br>
-            <p class="links" onclick="scholarship()"> Check if you are eligible for our scholarship</p>
-            <a class="links" href="feedback.html"> Click here to give your feedback</a>
+            <a class="links" data-bs-toggle="modal" data-bs-target="#scholarshipModal" title="you get 40% scholarship if your marks is above 90% and 30% if your marks is above 80%">Check if you are eligible for scholarship</a>
+            <a class="links" href="feedback.html"> <br>Click here to give your feedback</a>
         </div>
         <div class="ourcourses">
             <div class="course">
@@ -38,14 +38,14 @@
                 <img src="assets/home.jpeg" alt="home" height="300px" width="300px">
             </div>
         </div>
-        
-        </section>
-        <section >
-            <h4>Our Mission</h4>
+    </section>
+
+    <section>
+        <h4>Our Mission</h4>
         <section class="sec">
             <div>
-             <h5>Innovation in Education</h5>
-             <p>We aim to revolutionize the educational landscape by leveraging cutting-edge technology to create interactive, engaging, and dynamic virtual classrooms. Our platform seamlessly integrates multimedia tools and collaborative features to foster a stimulating learning environment for students and teachers alike.</p>
+                <h5>Innovation in Education</h5>
+                <p>We aim to revolutionize the educational landscape by leveraging cutting-edge technology to create interactive, engaging, and dynamic virtual classrooms. Our platform seamlessly integrates multimedia tools and collaborative features to foster a stimulating learning environment for students and teachers alike.</p>
             </div>
             <div>
                 <h5>Accessibility for All</h5>
@@ -54,36 +54,41 @@
             <div>
                 <h5>Empowering Educators</h5>
                 <p>Teachers are at the heart of our mission. We are committed to supporting educators by providing them with the resources, training, and technology they need to deliver effective and inspiring lessons. Our platform enhances their ability to reach and connect with students in innovative ways.</p>
-    
             </div>
             <div>
                 <h5>Student-Centered Learning</h5>
                 <p>Our focus is on the students. We believe in a personalized approach to education that caters to the unique needs and learning styles of each individual. Through our virtual classes, we aim to create an inclusive and supportive environment that encourages curiosity, creativity, and a lifelong love of learning.</p>
             </div>
-            </section>
-        </section> 
-        <section class="courses">
-            <div class="course-article">
-    
-                <p>Our Popular Courses - MERN   MEAN   DEVOPS  GenAI</p>
-    
-               
-            </div>
-      </section>    
-      <div id="myModal" class="modal">
-        <div class="modal-content">
-          <span class="close" onclick="closeModal()">&times;</span>
-          <p>Enter your marks to see the scholarship eligibility</p>
-          <form id="scholarship-form">
-            <label>Enter your marks percentage </label>
-            <input type="number" id="marks" required >
-            <label>Scholarship status </label>
-            <input type="text" id="res" readonly >
-            <button style="width: 80px;" onclick="calc()">Submit</button>
-          </form>
+        </section>
+    </section>
+
+    <section class="courses">
+        <div class="course-article">
+            <p>Our Popular Courses - MERN MEAN DEVOPS GenAI</p>
         </div>
-      
-      </div>
+    </section>
+
     <div id="footer"></div>
+
+    <div class="modal fade" id="scholarshipModal" tabindex="-1" aria-labelledby="scholarshipModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="scholarshipModalLabel">Check Scholarship Eligibility</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="scholarshipForm" onsubmit="calc(event)">
+                        <div class="mb-3">
+                            <label for="marks" class="form-label">Enter Your Marks:</label>
+                            <input type="number" class="form-control" id="marks" required>
+                            <input type="text" class="form-control" id="res" readonly>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Check Eligibility</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

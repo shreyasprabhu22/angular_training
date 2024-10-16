@@ -1,50 +1,12 @@
 body {
     font-family: 'Open Sans', Arial, sans-serif;
-    padding: 30px;
     font: Serif;
 }
-
-.gallery {
-    padding: 10px;
-    background-color: #E9F1FA;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.gallery-item {
-    width: 30%;
+.card{
     margin-bottom: 20px;
-    text-align: center;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: visible;
-    box-shadow: 0 0 5px rgb(10, 10, 10);
 }
-
-.gallery-item img {
-    width: 100%;
-    height: auto;
-}
-
-.caption {
-    padding: 10px;
-    font-size: 14px;
-    color: #333;
-    background-color: #f9f9f9; 
-    border-top: 1px solid #ddd; 
-}
-
-@media (max-width: 800px) {
-    .gallery-item {
-        width: 45%; 
-    }
-}
-
-@media (max-width: 500px) {
-    .gallery-item {
-        width: 100%; 
-    }
+.card-title {
+    font-size: 0.9rem; 
 }
 
 img.complete-sepia {

@@ -1,32 +1,22 @@
-function scholarship(){
-    modal= document.getElementById("myModal")
-    modal.style.display="block"
-}
-
-
-function closeModal() {
-    modal= document.getElementById("myModal")
-    modal.style.display = "none";
-  }
-
-function calc(){
+function calc(event) {
     event.preventDefault();
-    mark= document.getElementById("marks").value 
-    if(mark==""){
-        alert("marks cannot be empty")
-        return
+    const mark = document.getElementById("marks").value;
+    let msg = '';
+
+    if (mark === "") {
+        alert("Marks cannot be empty");
+        return;
     }
-    if(mark>100 || mark<0){
-        alert("enter valid marks")
+    if (mark > 100 || mark < 0) {
+        alert("Enter valid marks");
+        return;
     }
-    if(mark > 90){
-        msg=" Congrats!! you can get 40% scholarship"
+    if (mark > 90) {
+        msg = "Congrats!! You can get a 40% scholarship.";
+    } else if (mark > 80) {
+        msg = "Congrats!! You can get a 30% scholarship.";
+    } else {
+        msg = "OOPS!! You cannot get a scholarship.";
     }
-    else if(mark < 90 && mark>80){
-        msg=" Congrats!! you can get 30% scholarship"
-    }
-    else{
-        msg="OOPS!! You cannot get scholarship."
-    }
-    document.getElementById("res").value=msg
+    document.getElementById("res").value = msg;
 }
